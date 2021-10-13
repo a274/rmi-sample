@@ -1,6 +1,8 @@
 package com.company;
 
-public class ResultEquation{
+import java.io.Serializable;
+
+public class ResultEquation implements Serializable {
     private double[] res;
 
     public ResultEquation(double res1, double res2) {

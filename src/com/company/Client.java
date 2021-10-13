@@ -9,8 +9,7 @@ public class Client {
         try {
             Registry registry = LocateRegistry.getRegistry("192.168.40.1", 2098);
             Solution stub = (Solution) registry.lookup("Solution");
-            ResultEquation resultEquation = stub
-                    .solveEquation(args);
+            ResultEquation resultEquation = stub.solveEquation(args);
             System.out.println(resultEquation);
         } catch (Exception e) {
             e.printStackTrace();

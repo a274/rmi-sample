@@ -1,12 +1,10 @@
 package com.company;
 
-import java.io.Serializable;
-
-public class Equation implements Serializable {
+public class Equation {
     private final double a;
     private final double b;
     private final double c;
-    private transient ResultEquation resultEquation;
+    private ResultEquation resultEquation;
 
     public Equation(double a, double b, double c) {
         this.a = a;
